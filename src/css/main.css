@@ -103,45 +103,45 @@ html {
     box-sizing: inherit;
 }
 
-#container {
-    margin: 0;
+#page-wrapper {
+    width: 100%;
 }
 
 /*Header*/
 #header {
     background-color: #ffff00;
-    height: 6em;
+    height: 5em;
+}
+
+#content-wrapper {
+    width: 100%;
+    text-align: center;
 }
 
 /*Primary Sidebar*/
-#primary {
-    position: relative;
-    float:left;
-    width:17%;
+#left {
+    width: 240px;
     height: 100vh;
+    display: inline-block;
     background-color: #c71585;
 }
 
 /*Main Content*/
-#content {
-    float:left;
-    width:61%;
+#center {
+    width: 800px;
     height: 100vh;
+    display: inline-block;
     background-color: lawngreen ;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 /*Secondary Sidebar*/
-#secondary {
-    float:right;
-    width:22%;
+#right {
+    width: 320px;
     height: 100vh;
+    display: inline-block;
     background-color: #008b8b ;
-}
-
-
-#footer {
-    clear: both;
-    background-color: orange ;
 }
 
 
