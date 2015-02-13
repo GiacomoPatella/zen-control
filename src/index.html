@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
@@ -26,27 +27,164 @@
         <div id="page-wrapper">
 
             <div id="header">
-                <p>Header</p>
+                <img src="img/ze-white.png" alt="zen exchange logo"/>
+                <div class="btn-overdue"></div>
             </div>
 
             <div id="content-wrapper">
 
-                <div id="left">
-                    <div class="calendar-header">
-                        <p>CALENDAR</p>
+                <!--LEFT SECTION-->
+                <div id="lefto">
+                    <div class="img-wrap">
+                        <img src="img/ze-pink.png" alt="zen exchange logo"/>
                     </div>
                 </div>
+                <div id="left">
 
+                    <header role="banner"><time>August<em>2013</em></time><a href="#">Add event</a></header>
+                    <section role="main">
+                        <ul class="m-box--weeks"><li>Sun</li><li>Mon</li><li>Tue</li><li>Wed</li><li>Thu</li><li>Fri</li><li>Sat</li></ul>
+                        <ul class="m-box--date"><li class="l-date--passed">28</li><li class="l-date--passed">29</li><li class="l-date--passed">30</li><li class="l-date--passed">31</li><li>1</li><li>2</li><li>3</li></ul>
+                        <ul class="m-box--date"><li>4</li><li>5</li><li>6</li><li class="l-date--event" data-event="15:00 - New Haircut"><i class="m-bullet--event"></i> 7</li><li>8</li><li>9</li><li>10</li></ul>
+                        <ul class="m-box--date"><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li></ul>
+                        <ul class="m-box--date"><li>18</li><li>19</li><li>20</li><li>21</li><li>22</li><li>23</li><li>24</li></ul>
+                        <ul class="m-box--date"><li>25</li><li>26</li><li>27</li><li>28</li><li>29</li><li>30</li><li>31</li></ul>
+                    </section>
+                    <hr>
+                    <ul class="calendar-people">
+                        <li class="first">Agent</li>
+                        <li>Solicitor</li>
+                        <li>Solicitor</li>
+                        <li>Wife</li>
+                        <li>Photographer</li>
+                    </ul>
+
+                </div>
+
+                <!--MIDDLE SECTION    -->
                 <div id="center">
                     <div class="tasks-header">
-                        <p>CURRENT TASKS</p>
+                        <h1>CURRENT TASKS</h1>
+                    </div>
+                    <div class="tasks">
+                        <table>
+                            <thead>
+                                <tr class="border-bottom">
+                                    <th class="fixed">Yours</th>
+                                    <th class="fluid">Due</th>
+                                    <th class="fluid">Zen</th>
+                                </tr>
+                            </thead>
+
+                            <thead>
+                                <tr>
+                                    <th class="fixed"><p class="task-status overdue">OVERDUE</p></th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+                                <tr class="border-bottom-thin">
+                                    <td class="align-task"><button class="btn overdue">Send letter to solicitor</button></td>
+                                    <td>03.04</td>
+                                    <td><img src="img/very-angry.png" alt="angry face"/></td>
+                                </tr>
+
+                                <thead>
+                                    <tr>
+                                        <th class="fixed"><p class="task-status today">TODAY</p></th>
+                                    </tr>
+                                </thead>
+                                    <tr>
+                                        <td class="align-task"><button class="btn today">Chase gardener</button></td>
+                                        <td>05.04</td>
+                                        <td><img src="img/angry.png" alt="angry face"/></td>
+                                    </tr>
+                                <tr class="border-bottom-thin">
+                                    <td class="align-task"><button class="btn today">Don't do anything stupid</button></td>
+                                    <td>05.04</td>
+                                    <td><img src="img/passive.png" alt="zen unknown"/></td>
+                                </tr>
+
+                                <thead>
+                                    <tr class="border-bottom-thin">
+                                        <th class="fixed"><p class="task-status todo">APRIL 10</p></th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td class="align-task"><button class="btn todo">Send letter to solicitor</button></td>
+                                    <td>10.04</td>
+                                    <td><img src="img/happy.png" alt="happy face"/></td>
+                                </tr>
+                                <tr class="border-bottom-thin">
+                                    <td class="align-task"><button class="btn todo">Send letter to solicitor</button></td>
+                                    <td>10.04</td>
+                                    <td><img src="img/passive.png" alt="zen unknown"/></td>
+                                </tr>
+
+                                <thead>
+                                    <tr class="border-bottom-thin">
+                                        <th class="fixed"><p class="task-status todo">APRIL 12</p></th>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td class="align-task"><button class="btn todo">Sign contract with seller's solicitor</button></td>
+                                    <td>12.04</td>
+                                    <td><img src="img/passive.png" alt="zen unknown"/></td>
+                                </tr>
+                                <tr>
+                                    <td class="align-task"><button class="btn todo">Send letter to solicitor</button></td>
+                                    <td>12.04</td>
+                                    <td><img src="img/very_happy.png" alt="zen unknown"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
+                <!--RIGHT CONTENT-->
                 <div id="right">
                     <div class="whosonline-header">
-                        <p>WHO'S ONLINE?</p>
+                        <h1>WHO'S ONLINE?</h1>
                     </div>
+                    <div class="online-box">
+                        <ul class="whosonline-role">
+                            <li class="first">Agent</li>
+                            <li>Solicitor</li>
+                            <li>Solicitor</li>
+                            <li>Wife</li>
+                            <li>Photographer</li>
+                        </ul>
+                        <ul class="whosonline-pic">
+                            <li><img src="img/Oval-5.png" alt="profile pic of person online"/></li>
+                            <li><img src="img/Oval-6.png" alt="profile pic of person online"/></li>
+                            <li><img src="img/Oval-7.png" alt="profile pic of person online"/></li>
+                            <li><img src="img/Oval-8.png" alt="profile pic of person online"/></li>
+                            <li><img src="img/Oval-9.png" alt="profile pic of person online"/></li>
+                        </ul>
+                        <p><strong>+</strong></p>
+                        <p>ADD MEMBER</p>
+                    </div>
+                    <div class="history-header">
+                        <h1>TASKS HISTORY</h1>
+                    </div>
+
+                    <div class="timeline-box">
+                        <ul>
+                            <li class="timeline-date">April 01</li>
+                            <li>Send fax to John</li>
+                        </ul>
+                        <ul>
+                            <li class="timeline-date">March 27</li>
+                            <li class="btm-padding">Uploaded kitchen photo</li>
+                            <li><img src="img/Mask.png" alt="kitchen"/></li>
+                        </ul>
+                        <ul class="bottom-padding">
+                            <li class="timeline-date">March 23</li>
+                            <li>Open bank account</li>
+                        </ul>
+                    </div>
+
                 </div>
 
             </div>
@@ -54,8 +192,9 @@
         </div>
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js"></script>-->
+        <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
